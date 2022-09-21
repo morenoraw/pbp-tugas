@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 1,
+        "fields": {
+            "watched": "Yes",
+            "title": "Good Will Hunting",
+            "rating": 9.0,
+            "release_date": "05/12/1997",
+            "review": "This is the best movie I have seen since the Godfather. Matt Damon and Ben Affleck make a great team...not only as actors, but more impressively as co-writers. Add Robin Williams in perhaps his best role ever (too close to Good Morning Vietnam for me to make the call), and you have a wonderfully entertaining movie."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 2,
+        "fields": {
+            "watched": "No",
+            "title": "No : The Movie",
+            "rating": 2.0,
+            "release_date": "03/03/2013",
+            "review": "As a movie, this doesn't deserve a spot in the theaters. It's abysmal to watch and I can't stand it after a minute. There's nothing to see and feels so disgusting."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 3,
+        "fields": {
+            "watched": "No",
+            "title": "NOPE",    
+            "rating": 7.0,
+            "release_date": "17/08/2022",
+            "review": "Nope felt more like a psychological sci-fi thriller or drama than actual horror."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 4,
+        "fields": {
+            "watched": "Yes",
+            "title": "Yuni",
+            "rating": 7.5,
+            "release_date": "09/12/2021",
+            "review": "Yuni's vital message is that girls are not allowed to participate fully in the world, but they need to."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 5,
+        "fields": {
+            "watched": "No",
+            "title": "Top Gun : Maverick",
+            "rating": 8.4,
+            "release_date": "27/05/2022",
+            "review": "It's like a modern interpretation of The Dam Busters, but with jet propelled planes and huge thrusters, an impossible road, to deliver a load, with all the courage the pilots can muster. There might be a bit of Star Wars in there too."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 6,
+        "fields": {
+            "watched": "No",
+            "title": "How to cut a steak into 36 pieces : Live life with no mercy",
+            "rating": 4.0,
+            "release_date": "01/02/2003",
+            "review": "It was very joyous in the start. However, it begins to shatter in a way that is very unenjoyable after mid-film."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 7,
+        "fields": {
+            "watched": "Yes",
+            "title": "5 cm",
+            "rating": 7.1,
+            "release_date": "12/12/2012",
+            "review": "In the end, there is also some enlightenment about each character and moral fiber that is good for viewers. The best to watch & highly recommended for audiences who have old friendships and people who want adventure."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 8,
+        "fields": {
+            "watched": "Yes",
+            "title": "Better Call Saul : The Series : The Game : The Movie",
+            "rating": 2.0,
+            "release_date": "05/10/2041",
+            "review": "It's something that is not enjoyable at all. The series has everything to offer with its runtime, but this movie cuts the best parts of the series or what makes the series a good series. It's a bad movie in every way."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 9,
+        "fields": {
+            "watched": "No",
+            "title": "Nala",
+            "rating": 9.5,
+            "release_date": "27/02/2025",
+            "review": "This Indonesian film is excellent for people who wants a long sob. It's fantastically intricate and gets the feelings of the audiences. I can't stand not crying for one second in the whole runtime of 180 minutes."
+        }
+    },
+    {
+        "model": "mywatchlist.WatchlistItem",
+        "pk": 10,
+        "fields": {
+            "watched": "No",
+            "title": "Afterlife",
+            "rating": 10.0,
+            "release_date": "01/01/2004",
+            "review": "Nigel and Frank calls it a ****ing classic. Arthur Fleminger said that he can't take his eyes off the screen."
+        }
+    }
+]

@@ -20,8 +20,8 @@ class KatalogTestCases(TestCase):
         data = CatalogItem.objects.all()
         for test_data in data:
             self.assertTrue(isinstance(test_data.item_name, str))
-            self.assertTrue(isinstance(test_data.item_price, str))
+            self.assertTrue(isinstance(test_data.item_price, int))
             self.assertTrue(isinstance(test_data.description, str))
-            self.assertTrue(isinstance(test_data.item_stock, str))
-            self.assertTrue(isinstance(test_data.rating, str))
+            self.assertTrue(isinstance(test_data.item_stock, int))
+            self.assertTrue(isinstance(test_data.rating, int))
             self.assertTrue(isinstance(test_data.item_url, str))
