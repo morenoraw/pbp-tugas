@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Daftar Tugas</title>
+{% endblock meta %}
+
+ {% block content %}
+
+ <style>
+  h2 {text-align: center;}
+  </style>
+
+  <h1>Tugas 4 Assignment PBP/PBD</h1>
+
+  {% if user.is_authenticated %}
+    <h5>Selamat datang, {{ user.get_username }}. Ini dia tugasmu!</h5>
+  
+  <table border="1">
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for task in list_task %}
+    <tr>
+      <th>{{task.date}}</th>
+      <th>{{task.title}}</th>
+      <th>{{task.description}}</th>
+    </tr>
+  {% endfor %}
+</table>
+
+<button><a href="{% url 'todolist:create_task' %}">Tambah Tugas Baru</a></button>
+{% endif %}
+
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+ {% endblock content %}
