@@ -22,8 +22,8 @@ def show_todolist(request):
     return render(request, "todolist.html", context)
 
 def create_task(request):
-    form = TaskAdd(request.POST)
     if request.method == 'POST':
+        form = TaskAdd(request.POST)
         if form.is_valid():
             title = form.cleaned_data["title"]
             description = form.cleaned_data["description"]
@@ -31,9 +31,7 @@ def create_task(request):
             return redirect('todolist:show_todolist')
         else:
             form = TaskAdd()
-    
-    context = {'form': form}
-    return render(request, "create_task.html", context)
+    return render(request, "create_task.html", {'form': form})
 
 def register(request):
     form = UserCreationForm()
@@ -44,9 +42,7 @@ def register(request):
             form.save()
             messages.success(request, 'Akun telah berhasil dibuat!')
             return redirect('todolist:login')
-    
-    context = {'form':form}
-    return render(request, 'register.html', context)
+    return render(request, 'register.html', {'form': form})
 
 def login_user(request):
     if request.method == 'POST':
