@@ -6,3 +6,4 @@ class Task(models.Model):
     date = models.DateField()
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=255)
+    is_finished = models.BooleanField(default=False)

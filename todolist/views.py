@@ -22,8 +22,8 @@ def show_todolist(request):
     return render(request, "todolist.html", context)
 
 def create_task(request):
+    form = TaskAdd(request.POST)
     if request.method == 'POST':
-        form = TaskAdd(request.POST)
         if form.is_valid():
             title = form.cleaned_data["title"]
             description = form.cleaned_data["description"]
@@ -65,3 +65,13 @@ def logout_user(request):
     response.delete_cookie('last_login')
     return response
 
+def marker(request, id):
+    task = Task.objects.get(id = id)
+    task.is_finished = not(task.is_finished)
+    task.save()
+    return redirect('todolist:show_todolist')
+
+def delete_task(request, id):
+    task = Task.objects.get(id = id)
+    task.delete()
+    return redirect('todolist:show_todolist')
