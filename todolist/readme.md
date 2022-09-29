@@ -38,6 +38,6 @@ Maka dari itu, saya membuat class baru yang bernama `TaskAdd` dalam `taskform.py
 Hal-hal ini saya lakukan kepada `urls.py` yang berada di aplikasi.
 8. Melakukan deployment ke Heroku terhadap aplikasi yang sudah kamu buat sehingga nantinya dapat diakses oleh teman-temanmu melalui Internet.
 Saya melakukan push seperti biasa ke git yang telah saya buat, karena saya sudah setup sebelumnya di secrets -> HEROKU_API_KEY & HEROKU_APP_NAME. Sekarang saya mengganti ke aplikasi `tugas-morenoraw` karena agar namanya rapih dan tidak terpaku kepada tugas ke 2.
-9. Membuat dua akun pengguna dan tiga dummy data menggunakan model Task pada akun masing-masing di situs web Heroku.
+9. Membuat dua akun pengguna dan tiga dummy data menggunakan model Task pada akun masing-masing di situs web Heroku.<br>
 Akun 1: username = morenoraw, password = Moreno123 <br>
 Akun 2: username = morenoraws, password = Moreno123
