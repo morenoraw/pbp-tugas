@@ -1,5 +1,5 @@
 # Tugas 4: Pengimplementasian Form dan Autentikasi Menggunakan Django
-Projek ini dibuat untuk menyelesaikan tugas. Terdeploy di Heroku https://tugas-pbp-morenoraw.herokuapp.com/todolist/
+Projek ini dibuat untuk menyelesaikan tugas. Terdeploy di Heroku https://tugas-morenoraw.herokuapp.com/todolist/
 
 ## Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
 CSRF adalah **Cross-Site Request Forgery**. **Request Forgery** adalah salah satu perbuatan untuk membuat suatu request namun dibuat-buat. Hal ini merupakan sebuah cara untuk melakukan sebuah kejahatan internet karena request yang dilakukan biasanya adalah request yang berbahaya. Maka dari itu, Django menyediakan sebuah fitur untuk melawan **CSRF Token** yang merupakan kode rahasia acak yang unik untuk setiap situs tertentu. Setiap form yang dikirimkan oleh web kepada user, akan dikirimkan bersama CSRF Token sebagai proteksi dari serangan web berbahaya yang meniru seperti behavior request asli.
@@ -37,7 +37,7 @@ Maka dari itu, saya membuat class baru yang bernama `TaskAdd` dalam `taskform.py
 `http://localhost:8000/todolist/logout` berisi mekanisme logout.
 Hal-hal ini saya lakukan kepada `urls.py` yang berada di aplikasi.
 8. Melakukan deployment ke Heroku terhadap aplikasi yang sudah kamu buat sehingga nantinya dapat diakses oleh teman-temanmu melalui Internet.
-Saya melakukan push seperti biasa ke git yang telah saya buat, karena saya sudah setup sebelumnya. Sekarang saya mengganti ke aplikasi `tugas-morenoraw` karena agar namanya rapih dan tidak terpaku kepada tugas ke 2.
+Saya melakukan push seperti biasa ke git yang telah saya buat, karena saya sudah setup sebelumnya di secrets -> HEROKU_API_KEY & HEROKU_APP_NAME. Sekarang saya mengganti ke aplikasi `tugas-morenoraw` karena agar namanya rapih dan tidak terpaku kepada tugas ke 2.
 9. Membuat dua akun pengguna dan tiga dummy data menggunakan model Task pada akun masing-masing di situs web Heroku.
 Akun 1: username = morenoraw, password = Moreno123 <br>
 Akun 2: username = morenoraws, password = Moreno123
