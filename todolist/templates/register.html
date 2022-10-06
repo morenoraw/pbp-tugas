@@ -8,17 +8,31 @@
 
 <div class = "login">
     
-    <h1>Formulir Registrasi</h1>  
-
-        <form method="POST" >  
-            {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
-                </tr>  
-            </table>  
+    
+    <form method="POST" >  
+        {% csrf_token %}  
+        <div class="mask d-flex align-items-center h-100" style="background-color: #D6D6D6;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+                                <table>  
+                                        <h1>Formulir Registrasi</h1>  
+                                        {{ form.as_table }}  
+                                        <tr>  
+                                            <td></td>
+                                            <td><input class="btn btn-light" type="submit" name="submit" value="Daftar"/></td>  
+                                        </tr>  
+                                    </table>  
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </form>
 
     {% if messages %}  

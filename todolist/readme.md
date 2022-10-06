@@ -41,3 +41,40 @@ Saya melakukan push seperti biasa ke git yang telah saya buat, karena saya sudah
 9. Membuat dua akun pengguna dan tiga dummy data menggunakan model Task pada akun masing-masing di situs web Heroku.<br>
 Akun 1: username = morenoraw, password = Moreno123 <br>
 Akun 2: username = morenoraws, password = Moreno123
+
+# Tugas 5: Web Design Using HTML, CSS, and CSS Framework
+
+## Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
+Inline CSS merupakan penulisan CSS yang dilakukan didalam tag elemen yang akan di styling, sementara Internal CSS merupakan cara penulisan CSS yang dilakukan pada file yang sama dengan file HTML. Lalu, External CSS adalah cara penulisan CSS pada file yang terpisah dari HTML.
+
+Keuntungan dari Inline CSS adalah kita dapat memasukan dengan mudah dan cepat aturan - aturan CSS pada halaman HTML. Namun akan memakan waktu lebih banyak karena memasukan CSS styling pada setiap tag elemen.
+
+## Jelaskan tag HTML5 yang kamu ketahui.
+1. < h1 > ke < h6 > untuk mendefinisikan heading 1 ke 6. Semakin besar angka, semakin kecil tulisannya
+2. < head > mendefisikan "kepala" htmlnya
+3. < body > mendefisikan "badan" htmlnya
+4. < nav > mendefisikan "navigasi" htmlnya, cenderung bentuk navbar
+5. < p > untuk paragraf
+6. < section > mendefinisikan section html
+7. < b > untuk bold
+8. < br > untuk single line break
+9. < button > untuk memunculkan tombol
+10. < img > merepresentasikan sebuah gambar
+11. < input > mendefinisikan kontrol input
+dan banyak lainnya!
+
+## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
+
+1. Simple selectors (memilih yang elemennya berbasis dari nama, id, class)
+2. Combinator selectors (memeilih elemen sesuai hubungan)
+3. Pseudo-class selectors (memilih elemen sesuai kondisi)
+4. Pseudo-elements selectors (memilih dan styling beberapa elemen pilihan)
+5. Attribute selectors (memilih yang elemennya berbasis dari atribut atau nilai atribut)
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+1. Kustomisasi templat HTML yang telah dibuat pada Tugas 4 dengan menggunakan CSS atau CSS framework dengan Bootstrap, membuatnya di base.html mengisi link bootstrap.
+2. Kustomisasi templat untuk halaman login, register, dan create-task semenarik mungkin. Saya kustomisasi dengan melihat di internet bagaimana caranya implementasi banyak hal.
+3. Kustomisasi halaman utama todo list menggunakan cards. (Satu card mengandung satu task). Saya menggunakan cards dengan mengimplementasikannya kepada div class cards.
+4. Membuat keempat halaman yang dikustomisasi menjadi responsive. Saya membuatnya dengan cara memakai container sehingga bila window diresize akan sesuai.
+

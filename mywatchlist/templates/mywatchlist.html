@@ -4,37 +4,52 @@
 
  <style>
   h2 {text-align: center;}
+  table, th, td {
+  border: 1px solid black;
+  }
   </style>
 
-  <h1>Tugas 3 Assignment PBP/PBD</h1>
 
-  <h5>Name: </h5>
-  <b>{{nama}}</b>
+<div class="mask d-flex align-items-center h-100" style="background-color: #D6D6D6;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card" style="border-radius: 1rem;">
+        <div class="card-body p-5 text-center">
+          <h1 style="text-align: center">My Watchlist</h1>
+          
+          <h5 style="text-align: center">Name: </h5>
+          <h6 style="text-align: center">{{nama}}</h6>
+          
+          <h5 style="text-align: center">Student ID: </h5>
+          <h6 style="text-align: center">{{npm}}</h6>
+          <table rules="all", style="text-align: center">
+                        <tr>
+                          <th>Watched</th>
+                          <th>Title</th>
+                          <th>Rating</th>
+                          <th>Release Date</th>
+                          <th>Review</th>
+                        </tr>
+                        {% comment %} Add the data below this line {% endcomment %}
+                        {% for film in list_film %}
+                        <tr>
+                          <th>{{film.watched}}</th>
+                          <th>{{film.title}}</th>
+                          <th>{{film.rating}}</th>
+                          <th>{{film.release_date}}</th>
+                          <th>{{film.review}}</th>
+                      </tr>
 
-  <h5>Student ID: </h5>
-  <b>{{npm}}</b>
-
-  <table border="1">
-    <tr>
-      <th>Watched</th>
-      <th>Title</th>
-      <th>Rating</th>
-      <th>Release Date</th>
-      <th>Review</th>
-    </tr>
-    {% comment %} Add the data below this line {% endcomment %}
-    {% for film in list_film %}
-    <tr>
-      <th>{{film.watched}}</th>
-      <th>{{film.title}}</th>
-      <th>{{film.rating}}</th>
-      <th>{{film.release_date}}</th>
-      <th>{{film.review}}</th>
-  </tr>
-
-  {% endfor %}
-  
-</table>
-<h2>{{pesan}}</h2>
+                      {% endfor %}
+                      </table>
+                      <h2>{{pesan}}</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
  {% endblock content %}
