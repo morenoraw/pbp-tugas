@@ -9,6 +9,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.forms import Form
 from todolist.taskform import TaskAdd
 
 # TODO: Create your views here.
@@ -80,3 +81,28 @@ def delete_task(request, id):
     task = Task.objects.get(id = id)
     task.delete()
     return redirect('todolist:show_todolist')
+
+@login_required(login_url='/todolist/login/')
+def show_json(request):
+    current_user = request.user
+    data = Task.objects.filter(user=current_user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+@login_required(login_url='/todolist/login/')
+def show_todolist_ajax(request):
+    context = {
+        'user': request.user
+    }
+    return render(request, 'todolist_ajax.html', context)
+
+@login_required(login_url='/todolist/login/')
+def create_task_ajax(request):
+    if request.method == 'POST':
+        new_task = Task(
+            user = request.user,
+            title = request.POST.get('title_ajax'),
+            description = request.POST.get('description_ajax')
+        )
+        new_task.save()
+        return HttpResponse(serializers.serialize('json', [new_task,]), content_type='application/json')
+    return HttpResponse('')
