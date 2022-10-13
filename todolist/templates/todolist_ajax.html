@@ -91,6 +91,13 @@
             card.classList.add("flex-row");
             card.classList.add("text-center");
 
+            let row = document.createElement("div");
+            row.classList.add("row");
+            row.classList.add("g-0");
+            row.classList.add("d-flex");
+            row.classList.add("align-items-center");
+            row.classList.add("justify-content-center");
+
             let body = document.createElement("div");
             body.classList.add("card-body");
             body.classList.add("mb-4");
@@ -136,6 +143,8 @@
             body.appendChild(description);
             body.appendChild(marker);
             body.appendChild(deleter);
+            card.appendChild(body);
+            card.appendChild(row);
             document.getElementById("task-cards").appendChild(card);
         }
     }
